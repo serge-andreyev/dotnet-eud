@@ -14,7 +14,7 @@ Double-click the label to invoke its in-place editor and enter the desired stati
 
 ![](../../../../../images/eurd-win-label-static-text.png)
 
-Press CTRL+Enter to submit text changes and exit the label's in-place editing mode.
+Press CTRL+Enter to submit text changes and exit the label's in-place edit mode.
 
 ## Bind to Data
 ### Display Field Values
@@ -31,13 +31,13 @@ You can also drag and drop a numeric or text field from the [Field List](../../r
 
 ![](../../../../../images/eurd-win-label-drag-field-from-field-list.png)
 
-See the [Bind Controls to Data](../../bind-to-data/bind-controls-to-data-expression-bindings.md) topic to learn more about creating data-aware controls.
+See the [Bind Controls to Data](../../bind-to-data/bind-controls-to-data-expression-bindings.md) topic for more information.
 
 The **Process Duplicates Mode**, **Process Duplicates Target** and **Process Null Values** options enable you to hide a control when a duplicated or null value appears in an assigned data source.
 
 ![](../../../../../images/eurd-win-label-process-duplicates-mode.png)
 
-You can also specify output values' [format](../../shape-report-data/shape-data-expression-bindings/format-data.md) using the **Format String** property.
+You can also use the **Format String** property to specify output values' [format](../../shape-report-data/shape-data-expression-bindings/format-data.md).
 
 ![](../../../../../images/eurd-win-label-format-string.png)
 
@@ -47,23 +47,22 @@ Specify a data range in the **Summary Running** property and select the summary 
 
 ![](../../../../../images/eurd-win-label-summary-function.png)
 
-
 ## Adjust the Label Size and Content
 ### Static Content
 
-Use **Fit Bounds To Text** in the [Toolbar](../../report-designer-tools/toolbar.md)'s **Text Tools** contextual tab to change a label's size and fit its static text:
+You can change label size at design time to fit its static text. Right-click the label and select the **Fit Bounds To Text** command in the context menu:
 
-* If the **Word Wrap** option is enabled, the command displays control content in multiple lines. It decreases the control's height and adjusts the width to fit this content.
+* If the **Word Wrap** option is enabled, the command displays control content on multiple lines. It reduces control height and adjusts the width to fit its content.
 
 	![](../../../../../images/eurd-win-label-fit-bounds-to-text-word-wrap-enabled.png)
 
-* If the **Word Wrap** option is disabled and the control's content is partially visible, the command adjusts the control's size to display this content.
+* If the **Word Wrap** option is disabled and the control's content is partially visible, the command adjusts the control size to display this content.
 
 	![](../../../../../images/eurd-win-label-fit-bounds-to-text-word-wrap-disabled.png)
 
-This command's result also depends on the control's **Text Alignment** and **Right To Left** settings.
+The command's result also depends on the control's **Text Alignment** and **Right To Left** settings.
 
-Use the **Fit Text To Bounds** button to adjust the control's font size to fit its area. The **Word Wrap** option defines whether the resulting text can occupy multiple lines or should be in a single line.
+Use the **Fit Text To Bounds** button to adjust the control's font size to fit its area. The **Word Wrap** option defines whether the text can occupy multiple lines or should be in a single line.
 
 ![](../../../../../images/eurd-win-label-fit-text-to-bounds.png)
 
@@ -73,10 +72,9 @@ These commands are not available in the following cases:
 * A label's text is bound to data;
 * A label's **Angle** property is specified.
 
-
 ### Data-Bound Labels
 
-The **Can Grow** and **Can Shrink** properties allow you to increase or decrease the control's height according to its content in Print Preview.
+The **Can Grow** and **Can Shrink** properties allow you to increase or decrease the control's height according to its content in Print Preview mode.
 
 | Can Grow is enabled | Can Grow is disabled |
 |---|---|
@@ -87,27 +85,27 @@ The **Can Grow** and **Can Shrink** properties allow you to increase or decrease
 |---|---|
 | ![](../../../../../images/eurd-win-label-can-shrink-true.png) | ![](../../../../../images/eurd-win-label-can-shrink-false.png) |
 
-The **Auto Width** property specifies whether to adjust a data-bound label's width to its content.
+The **Auto Width** property specifies whether or not to adjust a data-bound label's width to its content.
 
-You can also use the opposite **Text Fit Mode** property to adjust a control's font size to fit its boundaries in Print Preview. This property is not available if the **Can Grow**, **Can Shrink** or **Auto Width** option is enabled.
+You can also use the opposite **Text Fit Mode** property to adjust a control's font size to fit its boundaries in Print Preview mode. This property is not available if the **Can Grow**, **Can Shrink** or **Auto Width** option is enabled.
 
 | Text Fit Mode = None | Text Fit Mode = Grow Only | Text Fit Mode = Shrink Only | Text Fit Mode = Shrink And Grow |
 |---|---|---|---|
 | ![](../../../../../images/eurd-win-label-text-fit-mode-none.png) | ![](../../../../../images/eurd-win-label-text-fit-mode-grow-only.png) | ![](../../../../../images/eurd-win-label-text-fit-mode-shrink-only.png) | ![](../../../../../images/eurd-win-label-text-fit-mode-shrink-and-grow.png) |
 
-See the [Lay out Dynamic Report Content](../../lay-out-dynamic-report-content.md) topic for more information on these options.
-
+See the [Arrange Dynamic Report Content](../../lay-out-dynamic-report-content.md) topic for more information.
 
 ## Interactivity
-Set the **Enabled** option in the **Edit Options** category to [make a label's content editable](../../provide-interactivity/edit-content-in-print-preview.md) in Print Preview.
+
+Check the **Enabled** option in the **Edit Options** category to enable users to [edit a label's content](../../provide-interactivity/edit-content-in-print-preview.md) in Print Preview mode.
 
 ![](../../../../../images/eurd-win-label-edit-options-enabled.png)
 
-Click this label in a previewed document to invoke the appropriate editor.
+Click this label in a previewed document to invoke the editor.
 
 ![](../../../../../images/eurd-win-label-content-editing-in-print-preview.png)
 
-Use the label's **Interactive Sorting** option to allow users to click this label in Print Preview to enable sorting report data. Set the **Target Band** property to the required Group Header or Detail band, and specify the data field in the **Field Name** property.
+Use the label's **Interactive Sorting** option to allow users to click this label in Print Preview to sort report data. Set the **Target Band** property to the required Group Header or Detail band, and specify the data field in the **Field Name** property.
 
 ![](../../../../../images/eurd-win-label-interactive-sorting-options.png)
 
