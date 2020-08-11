@@ -44,7 +44,7 @@ Use the query's **Parameters** property to access the query parameters collectio
 
 ![](../../../../images/eurd-win-query-parameters-query-properties.png)
 
-You can add query parameters in the Query Parameters dialog and modify the filter in the [FilterString Editor](../use-expressions.md#filter-editor).
+You can add query parameters in the Query Parameters dialog and modify the filter in the [FilterString Editor](../use-expressions.md#filterstring-editor).
 
 ## Configure Query Parameters
 
